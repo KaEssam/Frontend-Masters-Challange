@@ -1,0 +1,134 @@
+:root {
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+
+  --color-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-light-grey: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-pale-grey: #fafafa;
+
+  --light-weight: 200;
+  --regular-weight: 400;
+  --semi-bold-weight: 600;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-pale-grey);
+  color: var(--color-grayish-blue);
+}
+
+h1,
+h2 {
+  color: var(--color-dark-blue);
+  font-weight: var(--semi-bold-weight);
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5.335rem 2rem;
+}
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.heading-container h1 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.heading-container h1 span {
+  display: block;
+  font-weight: var(--light-weight);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: var(--color-white);
+  padding: 1.87rem;
+  width: 311px;
+  height: 222px;
+  margin-bottom: 1.6rem;
+  border-radius: 4px;
+  box-shadow: 1px 18px 48px -26px rgba(0, 0, 0, 0.52);
+}
+
+.card-container .left-container .card {
+  border-top: 0.3rem solid var(--color-cyan);
+}
+
+.card-container .middle-container .card:first-child {
+  border-top: 0.3rem solid var(--color-red);
+}
+
+.card-container .middle-container .card:last-child {
+  border-top: 0.3rem solid var(--color-orange);
+}
+
+.card-container .right-container .card {
+  border-top: 0.3rem solid var(--color-blue);
+}
+
+.card img {
+  display: flex;
+  width: 57px;
+  height: 57px;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+@media (min-width: 984px) {
+  .heading-container h1 {
+    font-size: 2.4rem;
+  }
+
+  .heading-container {
+    max-width: 540px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 85%;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+}
