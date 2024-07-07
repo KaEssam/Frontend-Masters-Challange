@@ -1,0 +1,120 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --light-grey: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: "Lexend Deca";
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  color: var(--light-grey);
+}
+
+p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 5em;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.container {
+  margin-inline: auto;
+  width: 920px;
+  display: flex;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 2.8rem;
+}
+
+.card1 {
+  background-color: var(--orange);
+}
+
+.card2 {
+  background-color: var(--cyan);
+}
+
+.card3 {
+  background-color: var(--dark-cyan);
+}
+
+#button1 {
+  color: var(--orange);
+}
+
+#button2 {
+  color: var(--cyan);
+}
+
+#button3 {
+  color: var(--dark-cyan);
+}
+
+button {
+  font-size: 15px;
+  width: 150px;
+  height: 50px;
+  background-color: var(--light-grey);
+  border: 0px solid transparent;
+  border-radius: 55%;
+  text-align: center;
+  border-radius: 50px;
+}
+
+#button1:hover {
+  background-color: var(--orange);
+  color: var(--light-grey);
+  border: 1px solid var(--light-grey);
+  cursor: pointer;
+}
+
+#button2:hover {
+  background-color: var(--cyan);
+  color: var(--light-grey);
+  border: 1px solid var(--light-grey);
+  cursor: pointer;
+}
+
+#button3:hover {
+  background-color: var(--dark-cyan);
+  color: var(--light-grey);
+  border: 1px solid var(--light-grey);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 1em;
+  }
+
+  .container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
+}
