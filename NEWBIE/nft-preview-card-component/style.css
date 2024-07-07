@@ -1,0 +1,136 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: auto;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  width: 25%;
+  min-width: 350px;
+}
+
+.container img {
+  width: 302px;
+  height: 302px;
+  margin: 24px;
+  border-radius: 10px;
+}
+
+.container img:active {
+  background-color: blue;
+}
+
+h4 {
+  font-size: 22px;
+  font-family: outfit;
+  color: white;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  line-height: 27.72px;
+}
+
+h4:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-about {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+  font-family: outfit;
+  margin: 10px 30px;
+}
+
+.nft-info {
+  display: flex;
+}
+
+.nft-price {
+  margin-left: 30px;
+  display: inline;
+}
+
+.nft-price svg {
+  margin-top: 20px;
+  margin-left: 5px;
+  position: absolute;
+}
+
+.nft-price p {
+  position: relative;
+  margin-left: 25px;
+  margin-top: 20px;
+  color: hsl(178, 100%, 50%);
+  font-size: 16px;
+  font-family: outfit;
+  font-weight: 600;
+}
+
+.nft-days svg {
+  margin-top: 20px;
+  margin-left: 100px;
+  position: absolute;
+}
+
+.nft-days p {
+  position: relative;
+  margin-left: 120px;
+  margin-top: 20px;
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+  font-family: outfit;
+  font-weight: 400;
+}
+
+.nft-creator {
+  display: flex;
+}
+.nft-creator img {
+  width: 33px;
+  height: 33px;
+  margin-left: 30px;
+  margin-top: 10px;
+  border: 1px white solid;
+  border-radius: 2rem;
+}
+
+.nft-creator p {
+  color: white;
+  font-family: Outfit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nft-creator p:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+span {
+  color: hsl(215, 51%, 70%);
+  font-family: Outfit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 3px;
+  margin-left: -10px;
+  font-size: 16px;
+}
+
+hr {
+  height: 1px;
+  border-width: 0;
+  background-color: hsl(215, 32%, 27%);
+}
